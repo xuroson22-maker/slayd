@@ -88,10 +88,68 @@ Quyuq to'q yashil to'ldirilgan to'rtburchak `#A2E8A2`, masalan `x=21.9, y=70.3, 
 
 ---
 
+# Mavzuga mos dizayn qatlami: "Simulink signal yo'li"
+
+O'qituvchi uslubi **o'zgarmagan** — format, oq fon, moviy tasmalar, yashil
+gradient sarlavha tasmasi, Times New Roman va butun matn palitrasi
+(`#000066` / `#0000FF` / `#FF0000` / `#0A0AFF`) saqlangan. Ustiga mavzuga mos
+bezak qatlami qo'shildi: taqdimot datchiklar va zanjirlar haqida bo'lgani
+uchun bezak tili **blok-sxema va ossillograf grafigi** estetikasidan olingan.
+
+## Bo'lim aksent ranglari
+
+Har bir reja bandi o'z aksentiga ega. Aksent faqat bezak elementlarini
+boshqaradi — matn ranglari o'qituvchidagidek qoladi.
+
+| # | Bo'lim | Aksent | Nega shu rang |
+|---|---|---|---|
+| 1 | Elektr zanjirlar | `#0070A8` | tok / elektr sxema ko'k rangi |
+| 2 | Magnit zanjirlar | `#A3182A` | magnit shimoliy qutb shartli qizili |
+| 3 | Struktura va Simulink | `#1F7A3D` | blok-sxema yashili |
+| 4 | Xoll datchigi, signal | `#B5651D` | yarimo'tkazgich / amber |
+
+Fon uchun ochiq variantlari: `#DCF1FA`, `#FBE4E6`, `#E3F4E7`, `#FBEEDC`.
+
+## Bezak elementlari
+
+1. **Bo'lim raqami bloki** — sarlavha tasmasining chapida, Simulink blokiga
+   o'xshash yumaloq burchakli kvadrat (26 × 26 pt), aksent rangda, ichida
+   oq raqam.
+2. **Signal yo'li indikatori** — tasmaning o'ng chetida to'rtta tap (doira),
+   joriy bo'lim to'ldirilgan, qolganlari kontur. 42 slaydli taqdimotda
+   tinglovchi qayerdaligini ko'rsatadi.
+3. **Signal tap markeri** — slayd ichki sarlavhasi oldida kvadrat + qisqa
+   chiziq; sxemadagi o'lchov nuqtasini eslatadi.
+4. **Ajratish bloki reyki** — yashil blokning chap chetida 6 pt aksent bar.
+5. **Formula plitasi** — yuqori va pastdan aksent reyka bilan chegaralangan,
+   fon bo'lim rangining ochiq variantida. Sxemadagi shinaga o'xshash.
+6. **Ossillograf grafigi** (`sine_strip`) — nuqtalardan yasalgan sinusoida.
+   Shakl nuqtalardan yig'ilgani uchun PowerPoint'da ham, preview'da ham
+   bir xil chiqadi. Sarlavha va yakuniy slaydda.
+7. **Sxema reykasi** (`node_rule`) — ingichka chiziq + uchta kvadrat tap,
+   ajratuvchi sifatida.
+8. **Blok zanjiri** (`block_chain`) — `[A] → [B] → [C]` ko'rinishidagi
+   Simulink blok zanjiri. Sarlavha slaydida datchikning mohiyatini bitta
+   qatorda beradi: `x(t) noelektr kattalik → DATCHIK → y(t) elektr signal`.
+   Yakuniy slaydda to'rtta bo'lim zanjiri.
+
+## Reja va xulosa slaydlari
+
+Reja bandlari va xulosa bandlari o'z bo'lim aksentida kartochkalarga
+joylashtirildi, har birida raqam bloki bor. Shu bilan reja → bo'lim tasmasi →
+xulosa bir xil vizual tilda bog'lanadi: tinglovchi 2-slayddagi 3-bandni
+25-slayddagi yashil badge bilan, 40-slayddagi yashil kartochka bilan
+bog'lay oladi.
+
+---
+
 # Nima o'zgardi
 
-`Mustaqil_ish_TNR20_ilmiy_dizayn.pptx` (40 slayd, 16:9, to'q ko'k/feruza dizayn)
-→ `Mustaqil_ish_Datchiklar_maruza_uslubi.pptx` (42 slayd, 4:3, yuqoridagi uslub).
+Asl `Mustaqil_ish_TNR20_ilmiy_dizayn.pptx` (40 slayd, 16:9, to'q ko'k/feruza
+dizayn) → **o'sha nomdagi yangi fayl** (42 slayd, 4:3, yuqoridagi uslub +
+mavzuga mos bezak qatlami).
+
+> Asl fayl git tarixida saqlanadi: `git show main:Mustaqil_ish_TNR20_ilmiy_dizayn.pptx > asl.pptx`
 
 ## Dizayn
 
@@ -181,8 +239,7 @@ Bular dizayn emas, modellashtirish masalalari — asl fayldagi rasmlar bilan bog
 
 ## Fayllar
 
-- `Mustaqil_ish_Datchiklar_maruza_uslubi.pptx` — yangi taqdimot (42 slayd)
-- `Mustaqil_ish_TNR20_ilmiy_dizayn.pptx` — asl fayl (o'zgartirilmagan)
+- `Mustaqil_ish_TNR20_ilmiy_dizayn.pptx` — taqdimot (42 slayd, qayta qurilgan)
 - `№4_Ma'ruza.pdf` — o'qituvchi taqdimoti (uslub manbasi, o'zgartirilmagan)
 - `preview/slide01.png … slide42.png` — har bir slaydning ko'rinishi
 
