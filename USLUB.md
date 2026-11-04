@@ -3,6 +3,20 @@
 Manba: `№4_Ma'ruza.pdf` — 39 sahifa, PowerPoint eksporti, muallif "Oleg", 2026-10-14.
 Barcha qiymatlar PDF content stream'laridan to'g'ridan-to'g'ri o'qilgan.
 
+> **Diqqat — joriy faylda ikki chekinish bor (foydalanuvchi so'rovi bo'yicha):**
+>
+> 1. **Format 16:9** (960 × 540 pt = 33.87 × 19.05 cm), o'qituvchida 4:3.
+>    Sabab: taqdimot keng ekranda ko'rsatiladi. Butun geometriya shu kenglik
+>    uchun qayta hisoblangan — tasmalar to'liq kenglikda, matn ustuni 820 pt
+>    (loyqa uzun qatorlar bo'lmasligi uchun), rasmlar 904 pt gacha.
+> 2. **Yuqori va pastki tasmalardagi yozuvlar olib tashlangan.** Tasmalarning
+>    o'zi — uslub elementi — qoldi. Pastki tasmaning o'ng chetida faqat
+>    slayd raqami turadi.
+>
+> Agar 4:3 va kafedra yozuvlari qaytarilishi kerak bo'lsa, generatorda
+> `W = 720`, `BODY_W = 676` qilib va `chrome()` ga matn qatorlarini qaytarib
+> tiklash mumkin.
+
 ## Sahifa geometriyasi
 
 | Parametr | Qiymat |
@@ -155,9 +169,9 @@ mavzuga mos bezak qatlami).
 
 | | Oldin | Keyin |
 |---|---|---|
-| Format | 16:9 (33.87 × 19.05 cm) | **4:3 (25.4 × 19.05 cm)** — o'qituvchida shunday |
+| Format | 16:9 (33.87 × 19.05 cm) | **16:9 saqlandi** (o'qituvchida 4:3, qasddan chekinish) |
 | Fon | to'q ko'k `#102C40` / `#EDF3F8` | oq `#FFFFFF` |
-| Kolontitul | yo'q | moviy `#00B0F0` tasmalar: kafedra nomi + copyright |
+| Kolontitul | yo'q | moviy `#00B0F0` tasmalar (yozuvsiz) + slayd raqami |
 | Sarlavha | to'q ko'k tasma, oq matn | **yashil gradient tasma, ko'k `#0000FF` matn** |
 | Kegl | hamma joyda 20pt | 24pt asosiy matn (o'qituvchida ham 24pt) |
 | Matn ranglari | `#182B38` / `#087F8C` | `#000066` asosiy, `#0A0AFF` ta'kid, `#FF0000` ingliz atamalar |
